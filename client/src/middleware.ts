@@ -27,7 +27,7 @@ export default clerkMiddleware(async (auth, req) => {
   }
 
   if (isTeacherRoute(req) && userRole !== "teacher") {
-    const url = new URL("/user/courses", req.url);
+    const url = new URL("/user/overview", req.url);
     return NextResponse.redirect(url);
   }
 
