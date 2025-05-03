@@ -14,6 +14,11 @@ export default async function OverviewPage() {
 
   return (
     <div className="container mx-auto">
+      <div className="flex items-center justify-between mb-5 ">
+        <h1 className="text-6xl font-bold gradient-title ">
+          Industry Insights
+        </h1>
+      </div>
       <Overview insights={insights} />
     </div>
   );
